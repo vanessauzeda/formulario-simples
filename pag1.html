@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 1</title>
+    <link href="/style2.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: white;
+}
+
+.container{ 
+    text-align: center;
+    width: 450px;
+    margin: auto;
+    margin-top: 10%;
+    padding: 15px;
+    color: white;
+    background-color: #001D3D;
+    box-shadow: 0 0 1em black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+
+
+li{
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    width: 37%;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.link1{
+
+    color: white;
+    background-color: gray;
+    font-weight: bold;
+    text-align: center;
+    width: 40%;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+.link2{
+
+    color: white;
+    background-color: #FFD60A;
+    font-weight: bold;
+    text-align: center;
+    width: 40%;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.link1:hover{
+    border: 1px solid white;
+}
+
+.link2:hover{
+    border: 1px solid white;
+}
+
+h1{
+    font-size: 26px;
+}
+
+input{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bold;
+    background-color: #001D3D;
+    width: 86%;
+    padding: 8px;
+    margin-top: 15px;
+    border: 1px solid white;
+}
+
+input[type="submit"]{
+    width: 91%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 23px;
+    color: white;
+    background-color: #FFD60A;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bold;
+    border: none;
+
+}
+
+input[type="submit"]:hover{
+    border: 1px solid white;
+}
+        @media screen and (max-width: 501px) {
+            .container {
+                text-align: center;
+                width: 400px;
+                margin: auto;
+                margin-top: 10%;
+                padding: 15px;
+                color: white;
+                background-color: #001D3D;
+                box-shadow: 0 0 1em black;
+                box-sizing: border-box;
+                border-radius: 5px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+        }
+
+
+        @media screen and (max-width: 380px) {
+            .container {
+                text-align: center;
+                width: 350px;
+                margin: auto;
+                margin-top: 10%;
+                padding: 15px;
+                color: white;
+                background-color: #001D3D;
+                box-shadow: 0 0 1em black;
+                box-sizing: border-box;
+                border-radius: 5px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <ul>
+            <a class="link1" href="./index.html">
+                <li>Inscreva-se</li>
+            </a><a class="link2" href="./pag1.html">
+                <li>Login</li>
+            </a>
+        </ul>
+
+        <h1>Seja bem-vindo!</h1>
+
+        <form method="post" action="#">
+
+            <input type="email" name="email" placeholder="Email*">
+            <input type="password" name="senha" placeholder="Senha*">
+
+            <a href="#3"><input type="submit" value="INICIAR"></a>
+
+        </form>
+
+
+    </div>
+</body>
+
+</html>
